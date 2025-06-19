@@ -1,0 +1,153 @@
+{
+    "explorer.compactFolders": false,
+    "redhat.telemetry.enabled": true,
+    "editor.linkedEditing": true,
+    "vim.normalModeKeyBindings": [],
+    "vim.commandLineModeKeyBindingsNonRecursive": [],
+    "editor.fontFamily": "Fira Code, Consolas, 'Courier New', monospace",
+    "git.openRepositoryInParentFolders": "never",
+    "github.copilot.enable": {
+        "*": false,
+        "plaintext": false,
+        "markdown": false,
+        "scminput": false
+    },
+    "editor.minimap.enabled": false,
+    "editor.renderWhitespace": "all",
+    "breadcrumbs.enabled": false,
+    "workbench.colorTheme": "Absolute Black",
+    "workbench.editor.showTabs": "none",
+
+    //Relative lines of code
+    "editor.lineNumbers": "relative",
+
+    // VimMotions
+    "vim.handleKeys": {
+        "<C-c>": false,
+        "<C-v>": false
+    },
+    "vim.leader": "<space>",
+    "vim.normalModeKeyBindingsNonRecursive": [
+        {
+            "before": [
+                "<leader>",
+                "e"
+            ],
+            "commands": [
+                {
+                    "command": "workbench.view.explorer"
+                }
+            ]
+        },
+        {
+            "before": [
+                "<leader>",
+                "c",
+            ],
+            "commands": [
+                {
+                    "command": "workbench.action.toggleSidebarVisibility"
+                }
+            ]
+        },
+        {
+            "before": [
+                "<C-f>"
+            ],
+            "commands": [
+                {
+                    "command": "actions.find"
+                }
+            ]
+        },
+        {
+            "before": [
+                "<leader>",
+                "f"
+            ],
+            "commands": [
+                {
+                    "command": "workbench.action.quickOpen"
+                }
+            ]
+        },
+        {
+            "before": [
+                "p"
+            ],
+            "commands": [
+                {
+                    "command": "editor.action.clipboardPasteAction"
+                }
+            ]
+        },
+        //Harpoon
+        {
+            "before": [
+                "<leader>",
+                "x"
+            ],
+            "commands": [
+                "vscode-harpoon.addEditor"
+            ]
+        },
+        {
+            "before": [
+                "<leader>",
+                "z"
+            ],
+            "commands": [
+                "vscode-harpoon.editEditors"
+            ]
+        },
+        {
+            "before": [
+                "<leader>",
+                "b",
+                "x"
+            ],
+            "commands": [
+                "vscode-harpoon.editorQuickPick"
+            ]
+        },
+
+        //Key Tabs
+        {
+            "before": [
+                "<leader>",
+                "1"
+            ],
+            "commands": [
+                "vscode-harpoon.gotoEditor1"
+            ]
+        },
+        {
+            "before": [
+                "<leader>",
+                "2"
+            ],
+            "commands": [
+                "vscode-harpoon.gotoEditor2"
+            ]
+        },
+        {
+            "before": [
+                "<leader>",
+                "3"
+            ],
+            "commands": [
+                "vscode-harpoon.gotoEditor3"
+            ]
+        },
+        {
+            "before": [
+                "<leader>",
+                "4"
+            ],
+            "commands": [
+                "vscode-harpoon.gotoEditor4"
+            ]
+        },
+        //End
+    ]
+}
