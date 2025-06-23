@@ -16,7 +16,14 @@
     "editor.renderWhitespace": "all",
     "breadcrumbs.enabled": false,
     "workbench.colorTheme": "Absolute Black",
-    "workbench.editor.showTabs": "none",
+
+
+    // Default Terminal
+    "terminal.integrated.defaultProfile.windows": "Command Prompt",
+
+    //Tabs
+    "workbench.editor.showTabs": "multiple",
+    "window.density.editorTabHeight": "compact",
 
     //Relative lines of code
     "editor.lineNumbers": "relative",
@@ -71,9 +78,10 @@
                 }
             ]
         },
+        //Copy Paste from esterior
         {
             "before": [
-                "p"
+                "P"
             ],
             "commands": [
                 {
@@ -85,7 +93,7 @@
         {
             "before": [
                 "<leader>",
-                "x"
+                "a"
             ],
             "commands": [
                 "vscode-harpoon.addEditor"
@@ -148,6 +156,27 @@
                 "vscode-harpoon.gotoEditor4"
             ]
         },
+        {
+            "before":[
+                "<leader>",
+                "t"
+            ],
+            "commands" : [
+                "workbench.action.terminal.new"
+            ]
+        },
         //End
-    ]
+        /*
+        {
+            "key": "ctrl+alt+right",
+            "command": "workbench.action.terminal.focusNextPane",
+            "when": "terminalFocus"
+        },
+        {
+            "key": "ctrl+alt+left",
+            "command": "workbench.action.terminal.focusPreviousPane",
+            "when": "terminalFocus"
+        }
+            */
+    ],
 }
